@@ -57,8 +57,10 @@ public class Patients extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot dfg : dataSnapshot.getChildren()){
 
+                     String Name =dfg.getKey() ;
                     FireObject ju = dfg.getValue(FireObject.class) ;
                     Log.d("TAG",ju.getWeight().toString());
+
                     al.add(ju);
                     adapter.notifyDataSetChanged();
 
@@ -91,7 +93,7 @@ public class Patients extends AppCompatActivity {
 
         public class ViewHolder extends RecyclerView.ViewHolder {
 
-            public TextView name  , agen;
+            public TextView name  , agen , suffer ;
 
 
 
@@ -99,6 +101,7 @@ public class Patients extends AppCompatActivity {
                 super(itemView);
                 name = (TextView) itemView.findViewById(R.id.name) ;
                 agen = (TextView) itemView.findViewById(R.id.gender) ;
+                suffer = (TextView)itemView.findViewById(R.id.suffer);
 
 
             }
@@ -124,6 +127,11 @@ public class Patients extends AppCompatActivity {
             final  FireObject o = al.get(position) ;
             holder.name.setText("Piyush Gupta");
             holder.agen.setText(o.getGender()+" (" +o.getAge()+" )");
+
+            if (o.getAge()==20) {
+                holder.name.setText("Ronak Sakhuja");
+                holder.suffer.setText("Acute Pyraxia");
+            }
 
             holder.name.setOnClickListener(new View.OnClickListener() {
                 @Override

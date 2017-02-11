@@ -41,7 +41,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Daily Steps"
+                    android:text="Today's Steps"
                     android:layout_centerHorizontal="true"
                     android:textColor="#fff"
                     android:textSize="20sp"
@@ -90,7 +90,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Water Unit"
+                    android:text="Water Drank"
                     android:layout_centerHorizontal="true"
                     android:textColor="#fff"
                     android:textSize="20sp"
@@ -121,6 +121,7 @@
                             android:layout_toRightOf="@id/feeim2"
                             android:textColor="#FFBF00"
                             android:text="5L"
+                            android:id="@+id/water"
                             android:textSize="40sp"
                             android:layout_centerVertical="true"
                             />
@@ -151,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:layout_below="@+id/grapo"
+                android:background="#fff"
                 >
 
                 <com.jjoe64.graphview.GraphView
