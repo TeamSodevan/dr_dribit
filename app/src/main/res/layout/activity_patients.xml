@@ -3,15 +3,14 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="#f2f2f2"
     >
-    <ListView
-        android:id="@+id/android:list"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        />
-    <TextView
-        android:id="@+id/android:empty"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:text="No items to display."/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"
+        >
+
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

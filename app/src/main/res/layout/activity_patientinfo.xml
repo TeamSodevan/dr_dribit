@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_patientinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="in.sodevan.dr_dribit.patientinfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cardshape2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gyu">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Piyush Gupta"
+                android:textSize="30sp"
+                android:textColor="#fff"
+                android:id="@+id/name1"
+                android:layout_marginBottom="8dp"
+                android:padding="20dp"
+                android:background="#FFBF00"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/huj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Steps"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/mah"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mah"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/feet"
+                    android:id="@+id/feeim"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/feeim"
+                    android:textColor="#FFBF00"
+                    android:text="17000"
+                    android:textSize="40sp"
+                    android:layout_centerVertical="true"
+                    />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/huj"
+                android:layout_marginTop="20dp"
+                android:id="@+id/juj"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water Unit"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/wata"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wata"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    >
+
+
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/drop"
+                            android:id="@+id/feeim2"
+                            android:layout_marginRight="30dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/feeim2"
+                            android:textColor="#FFBF00"
+                            android:text="5L"
+                            android:textSize="40sp"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/juj"
+                android:id="@+id/grapo"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:text="HeartBeat"
+                android:textSize="22sp"
+                android:layout_marginTop="15dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/grapo"
+                >
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:id="@+id/graph"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
